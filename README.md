@@ -1,6 +1,5 @@
 # Ezinstall
-Package manager of ezlisp
-
+Package manager of [ezlisp](https://github.com/chenbotao828/Ezlisp)
 
 # Compile ez.py
 
