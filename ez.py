@@ -12,12 +12,13 @@ ez.exe
 def main(args):
     args = args[1:]
     head = args[0]
+    ezlisp = os.getenv("Ezlisp")
 
     if head == "install":
         repo = args[1]
         url = "https://github.com/" + repo + ".git"
         module = repo.split('/')[1]
-        path = os.path.abspath('./packages/' + module)
+        path = os.path.join(ezlisp, "packages", module)
         os.makedirs(path)
         try:
             porcelain.clone(url,path)
@@ -25,7 +26,7 @@ def main(args):
             shutil.rmtree(path)
     elif head == "uninstall":
         module = args[1]
-        path = os.path.abspath('./packages/' + module)
+        path = os.path.join(ezlisp, "packages", module)
         shutil.rmtree(path)
 
 if __name__ == '__main__':
