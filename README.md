@@ -3,13 +3,13 @@ Package manager of [ezlisp](https://github.com/chenbotao828/Ezlisp)
 
 # Compile ez.py
 
-'''
+```
 
 pip install pyinstaller 
 
 pyinstaller --onefile ez.py
 
-'''
+```
 
 # Usage
 
