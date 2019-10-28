@@ -21,6 +21,6 @@ pyinstaller --onefile ez.py
 
 > ez.exe install author/repo 
 
-uninstall repo
+## uninstall repo
 
 > ez.exe uninstall repo
